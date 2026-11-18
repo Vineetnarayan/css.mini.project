@@ -1,7 +1,7 @@
 // Thala 7. Interactive Cart & Gallery Script
 const DEFAULT_CART = [
-  { id: 1, name: "Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes", price: 1334, qty: 2, img: "images/shoe-side.jpg" },
-  { id: 2, name: "Seven By M.S.Dhoni Hogun Pro Breathable Mesh Trainers", price: 1599, qty: 1, img: "images/shoe-front.jpg" }
+  { id: 1, name: "Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes", price: 1334, qty: 2, img: "shoe-side.jpg" },
+  { id: 2, name: "Seven By M.S.Dhoni Hogun Pro Breathable Mesh Trainers", price: 1599, qty: 1, img: "shoe-front.jpg" }
 ];
 
 function getCart() {
@@ -41,7 +41,7 @@ function addCurrentProductToCart() {
   const cart = getCart();
   const existing = cart.find(i => i.id === 1);
   if (existing) existing.qty += qty;
-  else cart.push({ id: 1, name: "Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes", price: 1334, qty, img: "images/shoe-side.jpg" });
+  else cart.push({ id: 1, name: "Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes", price: 1334, qty, img: "shoe-side.jpg" });
   saveCart(cart);
   alert('Added ' + qty + ' item(s) to Shopping Cart!');
 }
