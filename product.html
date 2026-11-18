@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thala 7. | Product Display</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-logo" href="index.html">Thala <span>7.</span></a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a class="nav-link " href="index.html">Home</a>
+        <a class="nav-link active" href="product.html">Product</a>
+        <a class="nav-link " href="cart.html">Cart</a>
+        <a class="nav-link " href="checkout.html">Checkout</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search shoes..." aria-label="Search shoes" />
+        </div>
+        <a class="cart-icon-btn" href="cart.html" aria-label="Shopping Cart">
+          <span>&#128722;</span>
+          <span class="cart-badge" id="header-cart-badge">2</span>
+        </a>
+        <div class="avatar-circle" title="User">V</div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumb"><a href="index.html">Home</a> &gt; THALA FOR A REASON &gt; <strong>Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes</strong></div>
+    <div class="product-display-main">
+      <div class="product-left-media">
+        <img id="main-product-img" src="images/shoe-side.jpg" alt="Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes" />
+      </div>
+      <div class="product-right-info">
+        <h1>Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes</h1>
+        <p class="product-description">For exceptional fit, feel and smooth transitions get going with these dual mid sole technology shoes constructed with molded EVA sock liner, gel at heel area, rubber outsole, fused upper and breathable mesh.</p>
+        <div class="price-sale-row">
+          <span class="price-highlight">₹ 1,334</span>
+          <div><span class="save-badge">Save 12%</span><span class="tax-note">Inclusive of all Taxes</span></div>
+        </div>
+        <div class="qty-cart-row">
+          <div class="qty-select-box">
+            <button type="button" onclick="changeProductQty(-1)">-</button>
+            <span id="product-qty-val">2</span>
+            <button type="button" onclick="changeProductQty(1)">+</button>
+          </div>
+          <button class="btn-primary add-to-cart-btn" type="button" onclick="addCurrentProductToCart()">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+
+    <h3>Product Gallery</h3>
+    <div class="gallery-scroll-flex">
+      <button type="button" class="gallery-thumb active" onclick="switchGalleryImage(this, 'images/shoe-side.jpg')"><img src="images/shoe-side.jpg" alt="Side View" /><span>Side View</span></button>
+      <button type="button" class="gallery-thumb" onclick="switchGalleryImage(this, 'images/shoe-front.jpg')"><img src="images/shoe-front.jpg" alt="Front View" /><span>Front Angle</span></button>
+      <button type="button" class="gallery-thumb" onclick="switchGalleryImage(this, 'images/shoe-side.jpg')"><img src="images/shoe-side.jpg" alt="Heel View" /><span>Heel Cushion</span></button>
+      <button type="button" class="gallery-thumb" onclick="switchGalleryImage(this, 'images/shoe-front.jpg')"><img src="images/shoe-front.jpg" alt="Mesh View" /><span>Mesh Upper</span></button>
+    </div>
+  </main>
+  <footer>Thala 7. &mdash; CSS Mini Project</footer>
+  <script src="app.js"></script>
+</body>
+</html>

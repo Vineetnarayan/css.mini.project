@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thala 7. | Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-logo" href="index.html">Thala <span>7.</span></a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a class="nav-link " href="index.html">Home</a>
+        <a class="nav-link " href="product.html">Product</a>
+        <a class="nav-link active" href="cart.html">Cart</a>
+        <a class="nav-link " href="checkout.html">Checkout</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search shoes..." aria-label="Search shoes" />
+        </div>
+        <a class="cart-icon-btn" href="cart.html" aria-label="Shopping Cart">
+          <span>&#128722;</span>
+          <span class="cart-badge" id="header-cart-badge">2</span>
+        </a>
+        <div class="avatar-circle" title="User">V</div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="split-layout">
+      <div class="left-container">
+        <h1 class="page-heading">Shopping Cart</h1>
+        <div class="cart-table-wrap">
+          <table class="cart-table">
+            <thead><tr><th>Product</th><th>Quantity</th><th>Price</th><th></th></tr></thead>
+            <tbody id="cart-tbody"></tbody>
+          </table>
+        </div>
+        <a class="continue-link" href="product.html">&lt; Continue Shopping</a>
+      </div>
+      <div class="right-container">
+        <div class="summary-card">
+          <label for="cart-coupon">Enter Coupon Code (try <strong>THALA7</strong>)</label>
+          <div class="coupon-row">
+            <input type="text" id="cart-coupon" placeholder="Enter coupon code" />
+            <button class="btn-blue" type="button" onclick="applyCoupon('cart-coupon')">Apply Coupon</button>
+          </div>
+          <div class="summary-lines">
+            <div class="summary-line"><span>Sub Total</span><span id="cart-subtotal">₹0</span></div>
+            <div class="summary-line"><span>Taxes (if applicable)</span><span id="cart-taxes">₹100</span></div>
+            <div class="summary-line"><span>Discount</span><span id="cart-discount">₹0</span></div>
+            <div class="summary-line total"><span>Total</span><span id="cart-total">₹0</span></div>
+          </div>
+          <a class="btn-primary pay-now-full" href="checkout.html">Pay Now&nbsp;<span id="cart-pay-amount">₹0</span></a>
+          <div class="trust-badges"><span class="badge-chip">100% SECURE</span><span class="badge-chip">Razorpay</span></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>Thala 7. &mdash; CSS Mini Project</footer>
+  <script src="app.js"></script>
+</body>
+</html>

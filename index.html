@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thala 7. | Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand-logo" href="index.html">Thala <span>7.</span></a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link " href="product.html">Product</a>
+        <a class="nav-link " href="cart.html">Cart</a>
+        <a class="nav-link " href="checkout.html">Checkout</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-box">
+          <input type="text" placeholder="Search shoes..." aria-label="Search shoes" />
+        </div>
+        <a class="cart-icon-btn" href="cart.html" aria-label="Shopping Cart">
+          <span>&#128722;</span>
+          <span class="cart-badge" id="header-cart-badge">2</span>
+        </a>
+        <div class="avatar-circle" title="User">V</div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero-banner">
+      <div class="hero-copy">
+        <span class="hero-tag">Thala For A Reason</span>
+        <h1>Run Beyond Limits with Seven by M.S. Dhoni</h1>
+        <p>Engineered with dual midsole EVA cushioning, breathable mesh uppers, and heel gel shock absorption for everyday training.</p>
+        <div class="hero-cta-group">
+          <a class="btn-primary" href="product.html">Shop Featured Shoe</a>
+          <a class="btn-outline-light" href="cart.html">View Cart</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="images/shoe-side.jpg" alt="Seven By M.S.Dhoni Running Shoe" />
+      </div>
+    </section>
+
+    <h2>Featured Running Shoes</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-card-img"><img src="images/shoe-side.jpg" alt="Hogun Multi-Color" /></div>
+        <h3>Seven By M.S.Dhoni Women's Hogun Multi-Color Running Shoes</h3>
+        <div class="product-card-meta"><span class="price-pill">₹ 1,334</span><span class="save-text">Save 12%</span></div>
+        <a class="btn-primary" href="product.html">View Product</a>
+      </div>
+      <div class="product-card">
+        <div class="product-card-img"><img src="images/shoe-front.jpg" alt="Hogun Pro" /></div>
+        <h3>Seven By M.S.Dhoni Hogun Pro Breathable Mesh Trainers</h3>
+        <div class="product-card-meta"><span class="price-pill">₹ 1,599</span><span class="save-text">Save 15%</span></div>
+        <a class="btn-primary" href="product.html">View Product</a>
+      </div>
+    </div>
+  </main>
+  <footer>Thala 7. &mdash; CSS Mini Project</footer>
+  <script src="app.js"></script>
+</body>
+</html>
